@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+    <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="اختر .."
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:background="@color/top_bar_bg_color"
+        android:textColor="#fff"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/MyListView">
+    </ListView>
+
+</LinearLayout>

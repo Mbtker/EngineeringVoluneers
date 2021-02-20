@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".EventsFragment"
+    android:layoutDirection="rtl"
+    android:background="#F6F6F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_bar_bg_color"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NewButton"
+            android:minWidth="100dp"
+            android:background="@drawable/search_bg_color"
+            android:text="اضافة فكرة جديدة"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp"/>
+
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/SearchButton"
+            android:text="الافكار"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="30dip"
+            android:minHeight="30dip"
+            android:minWidth="30dip"
+            android:maxWidth="30dip"
+            android:visibility="visible"
+            android:indeterminateTint="@color/progress_bar_color"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/MyListView"
+            android:numColumns="2"/>
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NoDataTxt"
+            android:text="لا توجد بيانات!"
+            android:padding="10dp"
+            android:textSize="12dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#535353"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

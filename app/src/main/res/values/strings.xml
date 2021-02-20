@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">التطوع الهندسي</string>
+    <string name="title_activity_engineers">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="gander">
+        <item>الكـل</item>
+        <item>ذكر</item>
+        <item>انثى</item>
+    </string-array>
+
+    <string-array name="Cites">
+        <item>الكـل</item>
+        <item>الرياض</item>
+        <item>المدينة المنورة</item>
+        <item>مكة المكرمة</item>
+        <item>الدمام</item>
+        <item>القصيم</item>
+        <item>جازان</item>
+    </string-array>
+
+    <string-array name="fields">
+        <item>الكـل</item>
+        <item>تطوع عام</item>
+        <item>هندسي</item>
+        <item>القصيم</item>
+        <item>تقني</item>
+        <item>مهاري</item>
+        <item>إدارة فريق</item>
+        <item>ناشر محتوى</item>
+        <item>موثق محتوى</item>
+        <item>باحث</item>
+    </string-array>
+
+    <string-array name="Filed">
+        <item>كهربائية</item>
+        <item>مدنية</item>
+        <item>مكانيكا</item>
+        <item>معمارية</item>
+        <item>صناعية</item>
+        <item>كيميائية</item>
+        <item>ادارة مشاريع</item>
+        <item>السلامة</item>
+    </string-array>
+
+</resources>

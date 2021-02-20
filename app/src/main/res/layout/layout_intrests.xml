@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="rtl"
+    android:id="@+id/GoToDetailsButton"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#46EEEEEE">
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                android:layout_width="140dp"
+                android:layout_height="90dp"
+                android:id="@+id/MyImageView"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop" />
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:id="@+id/CategoryName"
+                android:textColor="#000000"
+                android:text="التصنيف"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="18dp"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SelectedImage"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_done_black_24dp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

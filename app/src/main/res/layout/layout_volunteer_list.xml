@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:layout_margin="8dp"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/CellLayout"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_bg_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ImageLayout">
+
+                    <mbtkerteam.com.engvolunteered.Assistant.MyImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:id="@+id/MyImageView"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/no_img"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:id="@+id/FavoriteButton"
+                            android:src="@drawable/icon_favorite_off"/>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="5dp"
+                            android:id="@+id/ShearingButton"
+                            android:src="@drawable/icon_shearing"/>
+
+                    </LinearLayout>
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="20dip"
+                        android:minHeight="20dip"
+                        android:minWidth="20dip"
+                        android:maxWidth="20dip"
+                        android:visibility="visible"
+                        android:indeterminateTint="#606060"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TopicTxt"
+                    android:text="Topic"
+                    android:paddingRight="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16dp"
+                    android:layout_alignBottom="@+id/ImageLayout"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DiseTxt"
+                    android:singleLine="true"
+                    android:text=".."
+                    android:padding="5dp"
+                    android:textSize="14dp"
+                    android:layout_alignBottom="@+id/MyImageView"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="#25000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="التاريخ :"
+                    android:padding="5dp"
+                    android:textSize="13dp"
+                    android:visibility="gone"
+                    android:layout_alignBottom="@+id/MyImageView"
+                    android:textColor="@color/black"/>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DayTxt"
+                    android:text=".."
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:textSize="13dp"
+                    android:layout_alignBottom="@+id/MyImageView"
+                    android:textColor="@color/black"/>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="العدد : "
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:textSize="11dp"
+                    android:layout_alignBottom="@+id/MyImageView"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/NeedTxt"
+                    android:text="4"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textSize="10dp"
+                    android:layout_alignBottom="@+id/MyImageView"
+                    android:textColor="#636363"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CityTxt"
+                    android:text="المدينة : .."
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textSize="11dp"
+                    android:layout_alignBottom="@+id/MyImageView"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

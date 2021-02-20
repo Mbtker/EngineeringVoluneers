@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layoutDirection="rtl"
+    android:padding="2dp"
+    android:id="@+id/CellLayout"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_style"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TopicTxt"
+            android:text="العنوان"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

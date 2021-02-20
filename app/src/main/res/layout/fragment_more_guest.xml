@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MoreFragment"
+    android:layoutDirection="rtl"
+    android:background="#F6F6F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/top_bar_bg_color"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/SearchButton"
+            android:text="المزيد"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="17dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ContactSupportButton"
+            android:layout_marginTop="5dp"
+            android:text="مراسلة الدعم الفني"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#E1E1E1"/>
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/AboutButton"
+            android:layout_marginTop="5dp"
+            android:text="معلومات عن جمعية التطوع الهندسي"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="#E1E1E1"/>
+
+        <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/RegisterButton"
+            android:layout_marginTop="5dp"
+            android:text="التسجيل كـ متطوع"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

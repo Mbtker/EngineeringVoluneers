@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEngAccountActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/intro_logo"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="انشاء عضوية متطوع جديد"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/text_color"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/NationalIDEditTxt"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:hint="رقم السجل المدني"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:background="@drawable/gradient_edit_text"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/EngIDEditTxt"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:textAlignment="center"
+                android:hint="رقم العضوية بهيئة المهندسين"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:background="@drawable/gradient_edit_text"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxHeight="25dip"
+                android:minHeight="25dip"
+                android:minWidth="25dip"
+                android:maxWidth="25dip"
+                android:visibility="invisible"
+                android:indeterminateTint="@color/purple_200"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyButton
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:onClick="ContinueButton"
+                android:text="استمرار"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_style"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

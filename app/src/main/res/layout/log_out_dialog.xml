@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lgo_out_bg"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/lgo_out_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MessgaeTextView"
+                android:text="هل تريد تسجيل الخروج ؟"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textColor="#000"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyButton
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/OkButton"
+                    android:text="نعم"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_style"
+                    android:textColor="#fff"
+                    android:textSize="14dp"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progressBars"
+                    android:layout_below="@+id/detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:maxHeight="25dip"
+                    android:minHeight="25dip"
+                    android:minWidth="25dip"
+                    android:maxWidth="25dip"
+                    android:visibility="invisible"
+                    android:indeterminateTint="@color/progress_bar_color"
+                    android:layout_centerHorizontal="true" />
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyButton
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:id="@+id/CancelButton"
+                    android:text="الغاء"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/button_style_color_balck"
+                    android:textColor="#fff"
+                    android:textSize="14dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

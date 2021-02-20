@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VolunteerDetailsActivity"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-38dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="184dp"
+                android:background="@drawable/bg_image_details"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyImageViewTwo
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/MyImageView"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/big_img"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                tools:ignore="VectorDrawableCompat"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"/>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/TopicTxt"
+                    android:layout_marginBottom="-15dp"
+                    android:textStyle="bold"
+                    android:text="العنوان"
+                    android:textSize="25dp"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginRight="30dp"
+                        android:id="@+id/FavoriteButton"
+                        android:src="@drawable/icon_favorite_off"/>
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/ShearingButton"
+                        android:src="@drawable/icon_shearing"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="تفاصيل الفرصة التطوعية"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:textColor="@color/text_color"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DetailsTxt"
+                android:text="التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل التفاصيل "
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:background="#F8F8F8"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/DateTxt"
+                        android:text="التاريخ : .."
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/NeedTxt"
+                        android:text="المقاعد : .."
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/FiledTxt"
+                        android:text="المجال : .."
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/GanderTxt"
+                        android:text="الجنس : .."
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/OnlineTxt"
+                        android:text="عن بعد : .."
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"/>
+
+                    <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/UrgentTxt"
+                        android:text="عاجلة : لا"
+                        android:textSize="14dp"
+                        android:padding="5dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="الفوائد المكتسبة من الفرصة التطوعية :"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:textColor="@color/text_color"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="إستثمار الوقت, الثواب والاجر, توثيق الساعات التطوعية, الحصول على شهادة تطوع"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_color"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="المهارات المطلوبة :"
+                android:textSize="16dp"
+                android:padding="10dp"
+                android:textColor="@color/text_color"/>
+
+            <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مهارات الاتصال, مهارات التدريب"
+                android:textSize="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_style"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_horizontal">
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/OrganizationTxt"
+                    android:text="الجهة"
+                    android:textSize="16dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"/>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ContactTxt"
+                    android:text="رقم التواصل :"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/WebSiteTxt"
+                    android:text="الموقع الالكتروني :"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"/>
+
+                <mbtkerteam.com.engvolunteered.Assistant.MyButtonMedium
+                    android:layout_width="180dp"
+                    android:layout_height="45dp"
+                    android:text="انضمام"
+                    android:onClick="joiningButton"
+                    android:textSize="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_white_style"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

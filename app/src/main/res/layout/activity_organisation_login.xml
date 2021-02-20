@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrganisationLoginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <mbtkerteam.com.engvolunteered.Assistant.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="تسجيل دخول جهة موفرة فرص تطوعية"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/text_color"/>
+
+    <mbtkerteam.com.engvolunteered.Assistant.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/UserNameEditTxt"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textAlignment="center"
+        android:hint="اسم المستخدم"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:singleLine="true"
+        android:background="@drawable/gradient_edit_text"/>
+
+    <mbtkerteam.com.engvolunteered.Assistant.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/PassEditTxt"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:hint="كلمة المرور"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:background="@drawable/gradient_edit_text"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxHeight="25dip"
+        android:minHeight="25dip"
+        android:minWidth="25dip"
+        android:maxWidth="25dip"
+        android:visibility="invisible"
+        android:indeterminateTint="@color/purple_200"/>
+
+    <mbtkerteam.com.engvolunteered.Assistant.MyButton
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:onClick="SingInButton"
+        android:text="تسجيل الدخول"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_style"
+        android:textSize="14dp"/>
+
+
+</LinearLayout>

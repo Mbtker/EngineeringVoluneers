@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mbtkerteam.com.engvolunteered">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EngVolunteered">
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".VolunteerDetailsActivity" />
+        <activity android:name=".EngMainActivity" />
+        <activity android:name=".SelectInterestingAtivity" />
+        <activity android:name=".CreateEngTwoAccountActivity" />
+        <activity android:name=".OrganisationLoginActivity" />
+        <activity android:name=".CreateEngAccountActivity" />
+        <activity android:name=".VerificationLoginActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
